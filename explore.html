@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ocean Guardian - Explore</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="explorestyle.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">
+                <img src="Image/oceanguardianlogo.png" alt="Ocean Guardian Logo">
+
+                <div class="logo-text">
+                    <h1>Ocean Guardian</h1>
+                </div>
+            </div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Why was Ocean Guardian Created</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="explore.html"><i class="bx bx-search"></i> Explore</a>
+                <a href="#"><i class="bx bx-bot"></i> Quiz</a>
+                <li><a href="#"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h2 data-aos="fade-down" data-aos-duration="1200">Dive In</h2>
+            <h1 data-aos="fade-down" data-aos-duration="1200">Explore</h1>
+
+            <div class="divider" data-aos="fade-down" data-aos-duration="1200">
+                <span></span>
+                <img src="Image/turtle.png" alt="Ocean Guardian Turtle" class="turtle-icon">
+                <span></span>
+            </div>
+
+            <div class="wave-container">
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                    <style>
+                        .path-0{
+                            animation:pathAnim-0 4s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes pathAnim-0{
+                            0%{
+                                d: path("M 0,600 L 0,225 C 113.04306220095694,267.488038277512 226.08612440191388,309.97607655502395 306,309 C 385.9138755980861,308.02392344497605 432.6985645933014,263.5837320574162 527,225 C 621.3014354066986,186.41626794258374 763.1196172248805,153.68899521531102 875,131 C 986.8803827751195,108.31100478468898 1068.822966507177,95.6602870813397 1158,113 C 1247.177033492823,130.3397129186603 1343.5885167464116,177.66985645933016 1440,225 L 1440,600 L 0,600 Z");
+                            }
+                            25%{
+                                d: path("M 0,600 L 0,225 C 117.70334928229664,174.92344497607655 235.40669856459328,124.8468899521531 328,120 C 420.5933014354067,115.1531100478469 488.07655502392345,155.53588516746416 580,198 C 671.9234449760766,240.46411483253584 788.2870813397129,285.00956937799043 879,276 C 969.7129186602871,266.99043062200957 1034.7751196172248,204.42583732057417 1124,187 C 1213.2248803827752,169.57416267942583 1326.6124401913876,197.28708133971293 1440,225 L 1440,600 L 0,600 Z");
+                            }
+                            50%{
+                                d: path("M 0,600 L 0,225 C 79.31100478468898,178.16746411483254 158.62200956937795,131.33492822966508 253,153 C 347.37799043062205,174.66507177033492 456.82296650717706,264.82775119617224 554,289 C 651.1770334928229,313.17224880382776 736.0861244019139,271.354066985646 828,226 C 919.9138755980861,180.64593301435403 1018.8325358851675,131.755980861244 1122,131 C 1225.1674641148325,130.244019138756 1332.5837320574162,177.622009569378 1440,225 L 1440,600 L 0,600 Z");
+                            }
+                            75%{
+                                d: path("M 0,600 L 0,225 C 68.88038277511961,205.14354066985646 137.76076555023923,185.2870813397129 238,159 C 338.2392344497608,132.7129186602871 469.8373205741626,99.99521531100478 568,120 C 666.1626794258374,140.00478468899522 730.8899521531101,212.73205741626793 818,211 C 905.1100478468899,209.26794258373207 1014.6028708133972,133.07655502392345 1122,123 C 1229.3971291866028,112.92344497607655 1334.6985645933014,168.96172248803828 1440,225 L 1440,600 L 0,600 Z");
+                            }
+                            100%{
+                                d: path("M 0,600 L 0,225 C 113.04306220095694,267.488038277512 226.08612440191388,309.97607655502395 306,309 C 385.9138755980861,308.02392344497605 432.6985645933014,263.5837320574162 527,225 C 621.3014354066986,186.41626794258374 763.1196172248805,153.68899521531102 875,131 C 986.8803827751195,108.31100478468898 1068.822966507177,95.6602870813397 1158,113 C 1247.177033492823,130.3397129186603 1343.5885167464116,177.66985645933016 1440,225 L 1440,600 L 0,600 Z");
+                            }
+                        }
+                    </style>
+                    <path d="M 0,600 L 0,225 C 113.04306220095694,267.488038277512 226.08612440191388,309.97607655502395 306,309 C 385.9138755980861,308.02392344497605 432.6985645933014,263.5837320574162 527,225 C 621.3014354066986,186.41626794258374 763.1196172248805,153.68899521531102 875,131 C 986.8803827751195,108.31100478468898 1068.822966507177,95.6602870813397 1158,113 C 1247.177033492823,130.3397129186603 1343.5885167464116,177.66985645933016 1440,225 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#dcebf5" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="explore-section">
+
+            <div class="explore-card" data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-image">
+                    <img src="Image/exploreendangeredsection.png" alt="Endangered Marine Animals">
+                </div>
+                <div class="card-content">
+                    <div class="category">
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-water"></i>
+                        </span>Marine Life</div>
+                        <h2>Endangered Marine Animals</h2>
+                        <p>Discover marine species facing extinction and learn why they need our protection.</p>
+                        <div class="feature">
+                            <i class="fa-solid fa-paw"></i>
+                            Species at risk of extinction
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            Threats facing each species
+                        </div>
+                        <button>
+                            DIVE DEEPER
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="explore-card reverse" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="Image/explorethreatssection.png" alt="Marine Pollution">
+                    </div>
+                    <div class="card-content">
+                        <div class="category">
+                            <span class="icon-circle">
+                                <i class='bx bx-error'></i>
+                            </span>
+                            Threats
+                        </div>
+                        <h2>Threats They Face</h2>
+                        <p>Learn about the major threats harming marine life and theecosystems they depend on.</p>
+                        <div class="feature">
+                            <i class="fa-solid fa-exclamation"></i>
+                            Major threats to ocean life
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-fish"></i>
+                            Effects on marine wildlife
+                        </div>
+                        <button>
+                            SEE THE IMPACT
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="explore-card" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="Image/explorewhyumatterandhelpoutsection.png" alt="Beach Cleanup Volunteers">
+                    </div>
+                    <div class="card-content">
+                        <div class="category">
+                            <span class="icon-circle">
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+                            Take Action
+                        </div>
+                        <h2>Why It Matters &amp; How You Can Help</h2>
+                        <p>Learn why marine life matters and discover simple ways you can help protect our oceans and endangered species.</p>
+                        <div class="feature">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            Why your actions matter
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            Ways to help marine life
+                        </div>
+                        <button>
+                            TAKE ACTION
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="explore-card reverse" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="Image/exploremarinesuccessstoriessection.png" alt="Humpback Whale Breaching">
+                    </div>
+                    <div class="card-content">
+                        <div class="category">
+                            <span class="icon-circle">
+                                <i class="fa-solid fa-book"></i>
+                            </span>
+                            Stories
+                        </div>
+                        <h2>Marine Conservation Success Stories</h2>
+                        <p>Learn about the conservation efforts that have worked. Protecting marine life actually makes a difference.
+                        </p>
+                        <div class="feature">
+                            <i class="fa-solid fa-square-poll-horizontal"></i>
+                            Conservation success stories
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-fish"></i>
+                            Species recovery efforts
+                        </div>
+                        <button>
+                            MORE STORIES
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <script src="app.js"></script>
+        </body>
+        </html>

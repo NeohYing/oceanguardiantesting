@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Name & Icon-->
+        <title>Ocean Guardian</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">
+                <img src="Image/oceanguardianlogo.png" alt="Ocean Guardian Logo">
+
+                <div class="logo-text">
+                    <h1>Ocean Guardian</h1>
+                </div>
+            </div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Why was Ocean Guardian Created</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="explore.html"><i class="bx bx-search"></i> Explore</a>
+                <a href="#"><i class="bx bx-bot"></i> Quiz</a>
+                <li><a href="#"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h2>PROTECTING</h2>
+                <h1>LIFE <br><span class="highlight">BELOW WATER</span></h1>
+                <hr class="hero-divider">
+                <p>Together we can safeguard marine life and preserve our ocean for future generations.</p>
+                <a href="#our-mission" class="cta-btn">EXPLORE <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+
+            <div class="wave-container">
+                <!-- SVG -->
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                    <style>
+          .path-0{
+            animation:pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pathAnim-0{
+            0%{
+              d: path("M 0,600 L 0,225 C 113.04306220095694,267.488038277512 226.08612440191388,309.97607655502395 306,309 C 385.9138755980861,308.02392344497605 432.6985645933014,263.5837320574162 527,225 C 621.3014354066986,186.41626794258374 763.1196172248805,153.68899521531102 875,131 C 986.8803827751195,108.31100478468898 1068.822966507177,95.6602870813397 1158,113 C 1247.177033492823,130.3397129186603 1343.5885167464116,177.66985645933016 1440,225 L 1440,600 L 0,600 Z");
+            }
+            25%{
+              d: path("M 0,600 L 0,225 C 117.70334928229664,174.92344497607655 235.40669856459328,124.8468899521531 328,120 C 420.5933014354067,115.1531100478469 488.07655502392345,155.53588516746416 580,198 C 671.9234449760766,240.46411483253584 788.2870813397129,285.00956937799043 879,276 C 969.7129186602871,266.99043062200957 1034.7751196172248,204.42583732057417 1124,187 C 1213.2248803827752,169.57416267942583 1326.6124401913876,197.28708133971293 1440,225 L 1440,600 L 0,600 Z");
+            }
+            50%{
+              d: path("M 0,600 L 0,225 C 79.31100478468898,178.16746411483254 158.62200956937795,131.33492822966508 253,153 C 347.37799043062205,174.66507177033492 456.82296650717706,264.82775119617224 554,289 C 651.1770334928229,313.17224880382776 736.0861244019139,271.354066985646 828,226 C 919.9138755980861,180.64593301435403 1018.8325358851675,131.755980861244 1122,131 C 1225.1674641148325,130.244019138756 1332.5837320574162,177.622009569378 1440,225 L 1440,600 L 0,600 Z");
+            }
+            75%{
+              d: path("M 0,600 L 0,225 C 68.88038277511961,205.14354066985646 137.76076555023923,185.2870813397129 238,159 C 338.2392344497608,132.7129186602871 469.8373205741626,99.99521531100478 568,120 C 666.1626794258374,140.00478468899522 730.8899521531101,212.73205741626793 818,211 C 905.1100478468899,209.26794258373207 1014.6028708133972,133.07655502392345 1122,123 C 1229.3971291866028,112.92344497607655 1334.6985645933014,168.96172248803828 1440,225 L 1440,600 L 0,600 Z");
+            }
+            100%{
+              d: path("M 0,600 L 0,225 C 113.04306220095694,267.488038277512 226.08612440191388,309.97607655502395 306,309 C 385.9138755980861,308.02392344497605 432.6985645933014,263.5837320574162 527,225 C 621.3014354066986,186.41626794258374 763.1196172248805,153.68899521531102 875,131 C 986.8803827751195,108.31100478468898 1068.822966507177,95.6602870813397 1158,113 C 1247.177033492823,130.3397129186603 1343.5885167464116,177.66985645933016 1440,225 L 1440,600 L 0,600 Z");
+            }
+          }
+                    </style>
+                    <path d="M 0,600 L 0,225 C 113.04306220095694,267.488038277512 226.08612440191388,309.97607655502395 306,309 C 385.9138755980861,308.02392344497605 432.6985645933014,263.5837320574162 527,225 C 621.3014354066986,186.41626794258374 763.1196172248805,153.68899521531102 875,131 C 986.8803827751195,108.31100478468898 1068.822966507177,95.6602870813397 1158,113 C 1247.177033492823,130.3397129186603 1343.5885167464116,177.66985645933016 1440,225 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-container" data-aos="fade-up" data-aos-duration="1000">
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-duration="800">
+                    <i class="fa-solid fa-fish"></i>
+                    <div>
+                        <h3><span class="counter" data-target="1000">0</span>+</h3>
+                        <p>marine species<br>at risk</p>
+                    </div>
+                </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1000">
+                <i class="bx bx-water"></i>
+                <div>
+                    <h3><span class="counter" data-target="71">0</span>%</h3>
+                    <p>of Earth's surface is<br>covered by oceans</p>
+                </div>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1200">
+                <i class="bx bx-trash"></i>
+                <div>
+                    <h3><span class="counter" data-target="11">0</span> Million+</h3>
+                    <p>metric tons of plastic<br>enter the ocean</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-mission" id="our-mission">
+            <div class="our-mission-content">
+
+                <div class="mission-image">
+                    <img src="Image/homepageourmission.png" alt="Woman holding a sea turtle">
+                </div>
+
+                <div class="mission-text">
+                    <span class="mission-subtitle" data-aos="fade-up" data-aos-duration="1000">Our Mission</span>
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Many <span class="mission-highlight">Marine Species</span><br> Face Extinction</h2>
+                    <p data-aos="fade-up" data-aos-duration="1200">Plastic pollution, overfishing, habitat destruction, and climate change are threatening <span class="mission-highlight">marine life around the world.</span> As a result, many species face <span class="mission-highlight">declining populations</span> and an <span class="mission-highlight">uncertain future.</span></p>
+                    <h3 data-aos="fade-up" data-aos-duration="1200">Our mission is to:</h3>
+
+                    <div class="mission-item" data-aos="fade-up" data-aos-duration="1400">
+                        <i class="bx bxs-megaphone"></i>
+                        <p>Raise awareness about endangered marine species</p>
+                    </div>
+
+                    <div class="mission-item" data-aos="fade-up" data-aos-duration="1600">
+                        <i class="bx bxs-shield"></i>
+                        <p>Encourage action that doesn't harm marine life</p>
+                    </div>
+
+                    <div class="mission-item" data-aos="fade-up" data-aos-duration="1800">
+                        <i class="bx bx-water"></i>
+                        <p>Promote ocean conservation through everyday actions</p>
+                    </div>
+
+                    <a href="#" class="mission-btn" data-aos="fade-up" data-aos-duration="1000">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-animals" id="explore">
+            <div class="section-header"  data-aos="fade-up" data-aos-duration="1000">
+                <span class="featured-subtitle">Featured</span>
+                <h2>Marine Animals</h2>
+                <div class="divider">
+                    <span></span>
+                    <img src="Image/turtle.png" alt="Ocean Guardian Turtle" class="turtle-icon">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="slider-wrapper" data-aos="fade-up" data-aos-duration="1200">
+                <button class="slide-arrow prev-btn" id="prevbtn">
+                    <i class="bx bx-chevron-left"></i>
+                </button>
+                <button class="slide-arrow next-btn" id="nextbtn">
+                    <i class="bx bx-chevron-right"></i>
+                </button>
+
+                <div class="slider-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="slider-track" id="slidertrack">
+
+                        <!-- Hawksbill Turtle-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/hawksbillturtle.png" alt="Hawksbill Turtle">
+                                <span class="badge badge-crit">Critically endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>HAWKSBILL TURTLE</h3>
+                                <p class="scientific-name">Eretmochelys imbricata</p>
+                                <p class="description">A sea turtle known for its colorful shell and pointed beak.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Whale Shark-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/whaleshark.png" alt="Whale Shark">
+                                <span class="badge badge-endangered">Endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>WHALE SHARK</h3>
+                                <p class="scientific-name">Rhincodon typus</p>
+                                <p class="description">The world's largest fish, known for its gentle nature and filter-feeding habits.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                         <!--Dugong-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/dugong.png" alt="Dugong">
+                                <span class="badge badge-vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>DUGONG</h3>
+                                <p class="scientific-name">Dugong dugon</p>
+                                <p class="description">A gentle marine mammal that feeds on seagrass and helps keep coastal ecosystems healthy.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                         <!-- Humphead Wrasse-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/humpheadwrasse.png" alt="Humphead Wrasse">
+                                <span class="badge badge-endangered">Endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>HUMPHEAD WRASSE</h3>
+                                <p class="scientific-name">Cheilinus undulatus</p>
+                                <p class="description">A giant reef fish recognized for its large forehead and vibrant blue-green colors.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                          <!-- Oceanic Manta Ray-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/oceanicmantaray.png" alt="Oceanic Manta Ray">
+                                <span class="badge badge-endangered">Endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>OCEANIC MANTA RAY</h3>
+                                <p class="scientific-name">Mobula birostris</p>
+                                <p class="description">A graceful giant ray known for its wide wingspan and gentle movements through open oceans.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Oceanic Whitetip Shark-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/oceanicwhitetipshark.png" alt="Oceanic Whitetip Shark">
+                                <span class="badge badge-crit">Critically endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>OCEANIC WHITETIP SHARK</h3>
+                                <p class="scientific-name">Carcharhinus longimanus</p>
+                                <p class="description">A powerful ocean predator recognized for its long, white-tipped fins and wide-ranging habitat.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Blue Whale-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/bluewhale.png" alt="Blue Whale">
+                                <span class="badge badge-endangered">Endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>BLUE WHALE</h3>
+                                <p class="scientific-name">Balaenoptera musculus</p>
+                                <p class="description">A massive marine mammal known as the largest animal ever to live on Earth.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- North Atlantic Right Whale-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/northatlanticrightwhale.png" alt="North Atlantic Right Whale">
+                                <span class="badge badge-crit">Critically endangered</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>NORTH ATLANTIC RIGHT WHALE</h3>
+                                <p class="scientific-name">Eubalaena glacialis</p>
+                                <p class="description">A rare whale known for its massive body, slow movements, and long migrations along the Atlantic coast.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Sperm Whale-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/spermwhale.png" alt="Sperm Whale">
+                                <span class="badge badge-vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>SPERM WHALE</h3>
+                                <p class="scientific-name">Physeter macrocephalus</p>
+                                <p class="description">A deep-diving whale famous for its enormous head and ability to hunt giant squid.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Bigeye Thresher-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/bigeyethresher.png" alt="Bigeye Thresher">
+                                <span class="badge badge-vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>BIGEYE THRESHER</h3>
+                                <p class="scientific-name">Alopias superciliosus</p>
+                                <p class="description">A unique shark known for its enormous eyes and long tail used to stun prey.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Bluntnose Sixgill Shark -->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/bluntnosesixgillshark.png" alt="Bluntnose Sixgill Shark">
+                                <span class="badge badge-vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>BLUNTNOSE SIXGILL SHARK</h3>
+                                <p class="scientific-name">Hexanchus griseus</p>
+                                <p class="description">A deep-sea shark recognized for its six gill slits and powerful body adapted to life in dark ocean depths.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Bigeye Tuna -->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/bigeyetuna.png" alt="Bigeye Tuna">
+                                <span class="badge badge-vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>BIGEYE TUNA</h3>
+                                <p class="scientific-name">Thunnus obesus</p>
+                                <p class="description">A fast-swimming tuna recognized for its large eyes and ability to dive into deep waters.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Portuguese Dogfish-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/portuguesedogfish.png" alt="Portuguese Dogfish">
+                                <span class="badge badge-nt">Near Threatened</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>PORTUGUESE DOGFISH</h3>
+                                <p class="scientific-name">Centroscymnus coelolepis</p>
+                                <p class="description">A deep-sea shark known for its dark coloration and ability to thrive in the ocean's deepest waters.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Sulawesi Coelacanth-->
+                        <div class="animal-card">
+                            <div class="card-image-wrapper">
+                                <img src="Image/sulawesicoelacanth.png" alt="Sulawesi Coelacanth">
+                                <span class="badge badge-vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>SULAWESI COELACANTH</h3>
+                                <p class="scientific-name">Latimeria menadoensis</p>
+                                <p class="description">A rare ancient fish often called a "living fossil" because it has existed for millions of years.</p>
+                                <a href="#" class="card-btn">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="app.js"></script>
+    </body>
+</html>
